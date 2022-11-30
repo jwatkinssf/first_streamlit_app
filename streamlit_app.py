@@ -47,8 +47,8 @@ streamlit.header("The fruit load list contains:")
 # SlowFlake Related Functions
 def get_fruit_load_list():
     with my_cur = my_cnx.cursor() as my_cur:
-    my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
-    return my_cur.fetchall()
+         my_cur.execute("select * from pc_rivery_db.public.fruit_load_list")
+         return my_cur.fetchall()
 
 # Add a button to load the fruit
 if steamlit.button('Get Freuit Load List'):
