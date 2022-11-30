@@ -37,8 +37,8 @@ try:
         # output the response as a table
         streamlit.dataframe(fruityvice_normalized)
 
-  except URLError as e:
-                      streamlit.error()
+except URLError as e:
+    streamlit.error()
 
 #Lesson 12
 streamlit.stop()
